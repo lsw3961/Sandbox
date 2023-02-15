@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Aim",
+                    "type": "Value",
+                    "id": "164fb73a-c93f-4aa3-b5d9-dd2040ed99ad",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -141,6 +150,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3b627b7-7bb2-4b96-82d6-be783fcc5558",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Hold(duration=0.05)",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9a555aa2-686c-45ae-881b-6ad830decc04",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "Hold(duration=0.05)",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

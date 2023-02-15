@@ -21,12 +21,13 @@ public class PlayerMoveState : PlayerBaseState
     {
         if (!stateMachine.controller.isGrounded) 
         {
-            //stateMachine.SwitchState(new PlayerFallState(stateMachine));
+            stateMachine.SwitchState(new PlayerFallState(stateMachine));
         }
 
         CalculateMoveDirection();
         FaceMoveDirection();
         Move();
+        
 
         stateMachine.animator.SetFloat(moveSpeedHash, stateMachine.inputReader.MoveComposite.sqrMagnitude > 0f ? 1f : 0f, ANIMATION_DAMP_TIME, Time.deltaTime);
 

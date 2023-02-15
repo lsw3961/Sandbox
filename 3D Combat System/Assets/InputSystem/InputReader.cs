@@ -6,8 +6,10 @@ public class InputReader : MonoBehaviour, NewControls.IPlayerActions
 {
     public Vector2 MouseDelta;
     public Vector2 MoveComposite;
+    public int Aim;
 
     public Action OnJumpPerformed;
+    public Action On;
 
     private NewControls controls;
 
@@ -42,5 +44,10 @@ public class InputReader : MonoBehaviour, NewControls.IPlayerActions
             return;
 
         OnJumpPerformed?.Invoke();
+    }
+
+    public void OnAim(InputAction.CallbackContext context)
+    {
+        Aim = context.ReadValue<int>();
     }
 }

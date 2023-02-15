@@ -43,4 +43,9 @@ public abstract class PlayerBaseState : State
     {
         stateMachine.controller.Move(stateMachine.velocity * Time.deltaTime);
     }
+
+    protected void Aim() 
+    {
+        Debug.Log("IsAiming");
+    }
 }

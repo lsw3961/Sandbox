@@ -1,1 +1,2 @@
 Model Taken from Unity Technologies https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696 
+Outline taken from https://github.com/Robinseibold/Unity-URP-Outlines
